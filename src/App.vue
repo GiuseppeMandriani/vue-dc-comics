@@ -11,6 +11,12 @@
     </main>
 
     <!-- FOOTER -->
+    <footer>
+      <!-- Top Footer -->
+      <TopFooter />
+
+      <!-- Bottom Footer -->
+    </footer>
     
   </div>
 </template>
@@ -19,6 +25,7 @@
 import Header from '@/components/Header.vue';
 import Slider from '@/components/Slider.vue';
 import Merchandising from '@/components/Merchandising.vue';
+import TopFooter from '@/components/TopFooter.vue';
 
 
 export default {
@@ -27,6 +34,7 @@ export default {
     Header,
     Slider,
     Merchandising,
+    TopFooter,
   }
 }
 </script>
@@ -42,6 +50,7 @@ export default {
 body{
   font-family: sans-serif;
   font-size:14px;
+  color: #000;
 }
 .container{
   max-width: 1200px;

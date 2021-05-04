@@ -3,7 +3,7 @@
     <div class="container">
         <ul class="menu">
             <li class="card" v-for="(logo,index) in loghi" :key="index" >
-                <a href="#"><img src="'../assets/img/buy- +' logo.url" :alt="`${logo.text}`"></a>
+                <a href="#"><img src="'../assets/img/buy- +'`${logo.url}`" :alt="`${logo.text}`"></a>
                 <a class="text" href="#">{{ logo.text}}</a>
             </li>
         </ul>
