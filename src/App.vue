@@ -4,6 +4,11 @@
     <Header />
 
     <!-- MAIN -->
+    <main>
+      <Slider />
+      <Merchandising />
+
+    </main>
 
     <!-- FOOTER -->
     
@@ -12,12 +17,16 @@
 
 <script>
 import Header from '@/components/Header.vue';
+import Slider from '@/components/Slider.vue';
+import Merchandising from '@/components/Merchandising.vue';
 
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Slider,
+    Merchandising,
   }
 }
 </script>
@@ -38,4 +47,5 @@ body{
   max-width: 1200px;
   margin: 0 auto;
 }
+
 </style>

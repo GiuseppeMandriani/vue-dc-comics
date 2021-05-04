@@ -103,21 +103,27 @@ export default {
     display: flex;
     list-style: none;
 
+
+}
+.nav-menu li{
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    
 }
 
-
 .nav-menu li a{
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
+    padding: 1rem;
+    line-height:100px;
     text-transform: uppercase;
     text-decoration: none;
     color: #1c1c1c;
     font-size:12px;
-    border-bottom: 2px solid transparent;
     transition: .3s;
 }
 
-.nav-menu li a:hover,
-.nav-menu li a:active{
+.nav-menu li:hover,
+.nav-menu li:active{
     border-bottom: 2px solid dodgerblue;
 
 }
