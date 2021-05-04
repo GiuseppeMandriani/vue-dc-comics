@@ -16,6 +16,7 @@
       <TopFooter />
 
       <!-- Bottom Footer -->
+      <BottomFooter />
     </footer>
     
   </div>
@@ -26,6 +27,7 @@ import Header from '@/components/Header.vue';
 import Slider from '@/components/Slider.vue';
 import Merchandising from '@/components/Merchandising.vue';
 import TopFooter from '@/components/TopFooter.vue';
+import BottomFooter from '@/components/BottomFooter.vue';
 
 
 export default {
@@ -35,6 +37,7 @@ export default {
     Slider,
     Merchandising,
     TopFooter,
+    BottomFooter,
   }
 }
 </script>
