@@ -7,7 +7,7 @@
         <!-- Nav Bar -->
         <nav>
             <ul class="nav-menu">
-                <li v-for="(link,index) in links" :key="index">
+                <li v-for="(link,index) in links" :key="index" :class="{active: index == indexLink}">
                     <a href="">{{ link.text }}</a>
                 </li>
             </ul>
@@ -26,6 +26,7 @@ export default {
     // Data come funzione
         data() {
        return {
+           indexLink: 0,
            links: [
                { 
                     text: "characters",
@@ -135,8 +136,7 @@ header{
 }
 
 .nav-menu li:hover,
-.nav-menu li:active{
+.nav-menu li.active{
     border-bottom: 3px solid $primary;
-
 }
 </style>
