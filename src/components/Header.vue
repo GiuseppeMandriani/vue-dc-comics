@@ -85,16 +85,22 @@ export default {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/styles/vars.scss';
+@import '@/styles/mixins.scss';
+
 header{
     background-color: #fff;
 
 }
 .container{
     padding: 30px 0;
-    display: flex;
+
+    @include center('both');
+
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     height: 100px;
     background-color: #fff;
 }
@@ -129,7 +135,7 @@ header{
 
 .nav-menu li:hover,
 .nav-menu li:active{
-    border-bottom: 3px solid dodgerblue;
+    border-bottom: 3px solid $primary;
 
 }
 </style>

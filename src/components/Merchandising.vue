@@ -44,10 +44,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+@import '@/styles/vars.scss';
+@import '@/styles/mixins.scss';
+
+
 
 .merchandising{
-    background-color: #0282f9;
+    background-color: $primary;
     height: 120px;
 }
 
@@ -63,8 +67,11 @@ export default {
 .menu .card{
     flex-basis: calc(100% / 5);
     padding: 20px 30px;
-    display: flex;
-    align-items: center;
+
+    @include center('vertical')
+
+    /* display: flex;
+    align-items: center; */
 }
 
 .menu .card a{

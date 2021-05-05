@@ -31,15 +31,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/vars.scss';
+@import '@/styles/mixins.scss';
+
 
 .bottom-footer{
     height: 100px;
     background-color:#303030;
 }
 .container{
-    display: flex;
+    @include center('both');
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -50,15 +55,17 @@ export default {
     background-color: transparent;
     outline: none;
     color: #fff;
-    border: 1px solid #0282f9;
+    border: 1px solid $primary;
 }
 
 .right{
-    display: flex;
-    align-items: center;
+
+    @include center('vertical');
+    /* display: flex;
+    align-items: center; */
 
     h4{
-        color: #0282f9;
+        color: $primary;
         text-transform: uppercase;
         margin-right: 1rem;
 
