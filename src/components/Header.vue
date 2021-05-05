@@ -94,13 +94,14 @@ header{
 
 }
 .container{
-    padding: 30px 0;
+    padding: 0 30px;
 
     @include center('both');
 
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
+    justify-content: space-between;
     height: 100px;
     background-color: #fff;
 }

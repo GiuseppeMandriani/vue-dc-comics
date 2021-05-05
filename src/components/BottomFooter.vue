@@ -56,6 +56,12 @@ export default {
     outline: none;
     color: #fff;
     border: 1px solid $primary;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba($primary, .5);
+        
+    }
 }
 
 .right{
@@ -68,6 +74,12 @@ export default {
         color: $primary;
         text-transform: uppercase;
         margin-right: 1rem;
+        transition: .3s;
+        cursor: pointer;
+        padding: 10px 15px;
+        &:hover{
+            color: rgba($primary, .5);
+        }
 
     };
 
