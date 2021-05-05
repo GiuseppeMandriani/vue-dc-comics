@@ -94,6 +94,8 @@ export default {
     position: relative;
     background-image: url(../assets/img/footer-bg.jpg); 
     background-size: cover;
+    height: 300px;
+    padding: 30px 0;
 }
 .container{
     display: flex;
@@ -128,7 +130,7 @@ a:hover{
 /* LOGO BG */
 .logo-bg{
     width: 530px;
-    height: 425px;
+    height: 400px;
     position: absolute;
     overflow: hidden;
     top: -15%;
@@ -136,7 +138,7 @@ a:hover{
 }
 
 .logo-bg img{
-    width:350px;
+    width:320px;
 }
 
 

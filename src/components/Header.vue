@@ -86,12 +86,17 @@ export default {
 </script>
 
 <style scoped>
+header{
+    background-color: #fff;
+
+}
 .container{
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    background-color: #fff;
 }
 
 /* Logo */
@@ -124,7 +129,7 @@ export default {
 
 .nav-menu li:hover,
 .nav-menu li:active{
-    border-bottom: 2px solid dodgerblue;
+    border-bottom: 3px solid dodgerblue;
 
 }
 </style>

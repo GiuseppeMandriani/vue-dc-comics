@@ -3,7 +3,7 @@
     <div class="container">
         <ul class="menu">
             <li class="card" v-for="(logo,index) in loghi" :key="index" >
-                <a href="#"><img src="'../assets/img/buy- +'`${logo.url}`" :alt="`${logo.text}`"></a>
+                <a href="#"><img :src="logo.url" :alt="`${logo.text}`"></a>
                 <a class="text" href="#">{{ logo.text}}</a>
             </li>
         </ul>
@@ -20,23 +20,23 @@ export default {
             loghi:[
                 {
                     text: 'digital comics',
-                    url: 'comics-digital-comics.png'
+                    url:require ('../assets/img/buy-comics-digital-comics.png'),
                 },
                 {
                     text: 'dc merchandise',
-                    url: 'comics-merchandise.png'
+                    url:require( '../assets/img/buy-comics-merchandise.png'),
                 },
                 {
                     text: 'subscription',
-                    url: 'comics-digital-comics.png'
+                    url:require( '../assets/img/buy-comics-digital-comics.png'),
                 },
                 {
                     text: 'comic shop locator',
-                    url: 'comics-shop-locator.png'
+                    url:require( '../assets/img/buy-comics-shop-locator.png'),
                 },
                 {
                     text: 'dc power visa',
-                    url: 'dc-power-visa.png'
+                    url:require( '../assets/img/buy-dc-power-visa.svg'),
                 },
             ]
         }
@@ -57,7 +57,7 @@ export default {
 }
 
 .menu img{
-    max-width: 50px;
+    width: 50px;
 }
 
 .menu .card{

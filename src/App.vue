@@ -54,10 +54,16 @@ body{
   font-family: sans-serif;
   font-size:14px;
   color: #000;
+  background-color:#1c1c1c;
+
 }
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
+
+
+
 
 </style>
