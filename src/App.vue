@@ -5,6 +5,7 @@
 
     <!-- MAIN -->
     <main>
+      <Jumbotron/>
       <Slider />
       <Merchandising />
 
@@ -28,12 +29,14 @@ import Slider from '@/components/Slider.vue';
 import Merchandising from '@/components/Merchandising.vue';
 import TopFooter from '@/components/TopFooter.vue';
 import BottomFooter from '@/components/BottomFooter.vue';
+import Jumbotron from '@/components/Jumbotron.vue';
 
 
 export default {
   name: 'App',
   components: {
     Header,
+    Jumbotron,
     Slider,
     Merchandising,
     TopFooter,
